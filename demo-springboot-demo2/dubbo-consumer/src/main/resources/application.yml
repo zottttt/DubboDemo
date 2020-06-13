@@ -1,0 +1,15 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+
+#此处配置是为了消除两个<dubbo application>的报错
+dubbo:
+  application:
+    qos-port: 20880
+    id: dubbo-consumer
+    name: dubbo-consumer
+    logger: slf4j
+spring:
+  main:
+    allow-bean-definition-overriding: true
